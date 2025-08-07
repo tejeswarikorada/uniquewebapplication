@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Personality Tester</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fc466b, #3f5efb);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .colors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .color-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid white;
+      transition: transform 0.2s;
+    }
+
+    .color-box:hover {
+      transform: scale(1.2);
+    }
+
+    #result {
+      font-size: 1.2em;
+      margin-top: 30px;
+      padding: 20px;
+      max-width: 500px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Color Personality Tester</h1>
+  <p>Select your favorite color:</p>
+  
+  <div class="colors">
+    <div class="color-box" style="background-color: red;" onclick="showPersonality('red')"></div>
+    <div class="color-box" style="background-color: orange;" onclick="showPersonality('orange')"></div>
+    <div class="color-box" style="background-color: yellow;" onclick="showPersonality('yellow')"></div>
+    <div class="color-box" style="background-color: green;" onclick="showPersonality('green')"></div>
+    <div class="color-box" style="background-color: blue;" onclick="showPersonality('blue')"></div>
+    <div class="color-box" style="background-color: purple;" onclick="showPersonality('purple')"></div>
+    <div class="color-box" style="background-color: pink;" onclick="showPersonality('pink')"></div>
+    <div class="color-box" style="background-color: black;" onclick="showPersonality('black')"></div>
+  </div>
+
+  <div id="result">Click a color above to discover your personality!</div>
+
+  <script>
+    const personalities = {
+      red: "❤️ You're bold, passionate, and full of energy. A natural leader who loves excitement!",
+      orange: "🧡 You're friendly, fun-loving, and full of warmth. People love your vibrant spirit.",
+      yellow: "💛 You're optimistic, cheerful, and creative. You light up any room you're in!",
+      green: "💚 You're calm, balanced, and love nature. You bring peace wherever you go.",
+      blue: "💙 You're trustworthy, thoughtful, and reliable. A deep thinker with a gentle heart.",
+      purple: "💜 You're imaginative, mysterious, and spiritual. A true original!",
+      pink: "💗 You're loving, caring, and sensitive. You spread kindness and joy!",
+      black: "🖤 You're elegant, powerful, and a little mysterious. Cool, calm, and collected."
+    };
+
+    function showPersonality(color) {
+      const message = personalities[color] || "You're unique and undefinable!";
+      document.getElementById("result").innerText = message;
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Personality Tester</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fc466b, #3f5efb);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .colors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .color-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid white;
+      transition: transform 0.2s;
+    }
+
+    .color-box:hover {
+      transform: scale(1.2);
+    }
+
+    #result {
+      font-size: 1.2em;
+      margin-top: 30px;
+      padding: 20px;
+      max-width: 500px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Color Personality Tester</h1>
+  <p>Select your favorite color:</p>
+  
+  <div class="colors">
+    <div class="color-box" style="background-color: red;" onclick="showPersonality('red')"></div>
+    <div class="color-box" style="background-color: orange;" onclick="showPersonality('orange')"></div>
+    <div class="color-box" style="background-color: yellow;" onclick="showPersonality('yellow')"></div>
+    <div class="color-box" style="background-color: green;" onclick="showPersonality('green')"></div>
+    <div class="color-box" style="background-color: blue;" onclick="showPersonality('blue')"></div>
+    <div class="color-box" style="background-color: purple;" onclick="showPersonality('purple')"></div>
+    <div class="color-box" style="background-color: pink;" onclick="showPersonality('pink')"></div>
+    <div class="color-box" style="background-color: black;" onclick="showPersonality('black')"></div>
+  </div>
+
+  <div id="result">Click a color above to discover your personality!</div>
+
+  <script>
+    const personalities = {
+      red: "❤️ You're bold, passionate, and full of energy. A natural leader who loves excitement!",
+      orange: "🧡 You're friendly, fun-loving, and full of warmth. People love your vibrant spirit.",
+      yellow: "💛 You're optimistic, cheerful, and creative. You light up any room you're in!",
+      green: "💚 You're calm, balanced, and love nature. You bring peace wherever you go.",
+      blue: "💙 You're trustworthy, thoughtful, and reliable. A deep thinker with a gentle heart.",
+      purple: "💜 You're imaginative, mysterious, and spiritual. A true original!",
+      pink: "💗 You're loving, caring, and sensitive. You spread kindness and joy!",
+      black: "🖤 You're elegant, powerful, and a little mysterious. Cool, calm, and collected."
+    };
+
+    function showPersonality(color) {
+      const message = personalities[color] || "You're unique and undefinable!";
+      document.getElementById("result").innerText = message;
+    }
+  </script>
+</body>
+</html>
